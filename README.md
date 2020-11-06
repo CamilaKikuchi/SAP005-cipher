@@ -2,7 +2,7 @@
 
 Desenvolvido para mulheres em situação de risco.
 
-![Screenshot](screenshot.png)
+![](screenshot.png)
 
 ## Índice
 
