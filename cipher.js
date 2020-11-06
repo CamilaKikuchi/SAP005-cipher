@@ -1,27 +1,31 @@
 const cipher = {
-  encode: function(){
+
+  encode: function() {
+
     const textArea = document.getElementById("text").value 
     const offset = Number(document.getElementById("offset").value)
     let resultado = "";
-    
-    
 
+    
     for(let i = 0; i <textArea.length; i++) {
       const text = textArea.charCodeAt(i);
       const palavraCodificada =((text - 65 + offset) % 26) + 65;
       
-    resultado += String.fromCharCode(palavraCodificada);
-    }
-  
-
+    resultado += String.fromCharCode(palavraCodificada); }
+    
+    
   document.getElementById("resultado").innerHTML =`código pronto: ${resultado}` 
+  
 },
-decode: function(){
+
+
+
+  decode: function(){
     
   const textAreaUm = document.getElementById("textUm").value
   const offsetUm = Number(document.getElementById("offsetUm").value)
   let resultado = "";
-  
+
 
   for(let i = 0; i <textAreaUm.length; i++) {
     const text = textAreaUm.charCodeAt(i);
@@ -37,5 +41,5 @@ document.getElementById("resultado").innerHTML =`código pronto: ${resultado}`
 };
 
 
-export default cipher;
 
+export default cipher;
