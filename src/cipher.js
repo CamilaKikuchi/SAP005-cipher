@@ -15,7 +15,9 @@ const cipher = {
   
 
   document.getElementById("resultado").innerHTML =`código pronto: ${resultado}` 
+  
 },
+  
 decode: function(){
     
   const textAreaUm = document.getElementById("textUm").value
